@@ -15,7 +15,7 @@ GPIO.setmode(GPIO.BCM)
 # -----------------------
 # Camera stream config
 # -----------------------
-LAPTOP_IP = "192.168.137.1"    # <-- CHANGE if needed
+LAPTOP_IP = ""    # <-- CHANGE if needed
 UDP_PORT  = 5000
 
 CAMERA_CMD = (
