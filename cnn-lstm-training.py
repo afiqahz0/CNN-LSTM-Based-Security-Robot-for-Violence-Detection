@@ -67,8 +67,8 @@ class VideoGenerator(tf.keras.utils.Sequence):
 # --------------------
 # Load dataset paths
 # --------------------
-violent_dir = "D:/Data FYP/Real Life Violence Dataset/Violence"
-nonviolent_dir = "D:/Data FYP/Real Life Violence Dataset/NonViolence"
+violent_dir = ""
+nonviolent_dir = ""
 
 violent_videos = [os.path.join(violent_dir, f) for f in os.listdir(violent_dir) if f.endswith(".mp4")]
 nonviolent_videos = [os.path.join(nonviolent_dir, f) for f in os.listdir(nonviolent_dir) if f.endswith(".mp4")]
@@ -170,4 +170,5 @@ print("Recall:", recall_score(test_labels, pred_binary))
 print("F1-Score:", f1_score(test_labels, pred_binary))
 
 model.save('violence_detection_MobileNet_Lstm_model.h5')
+
 
