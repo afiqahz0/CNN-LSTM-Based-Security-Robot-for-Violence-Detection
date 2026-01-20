@@ -13,8 +13,8 @@ import cv2, numpy as np
 # =======================
 import requests
 
-BOT_TOKEN = "8533554971:AAHhVWBFRgo9f5k5imcjFojJKloA-TR2r4Q"
-CHAT_ID   = "726537758"
+BOT_TOKEN = ""
+CHAT_ID   = ""
 
 PI_GPS_PORT = 9100   # GPS socket from Pi
 # =======================
@@ -236,3 +236,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
